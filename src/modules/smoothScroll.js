@@ -9,10 +9,8 @@ export const smoothScroll = () => {
                 top: 0,
                 behavior: 'smooth'
             })
-
         })
     })
-
 }
 
 smoothScroll()

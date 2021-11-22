@@ -16,7 +16,6 @@ function cart() {
 
     localStorage.setItem('cart', JSON.stringify(newCart))
     renderCartGoods(JSON.parse(localStorage.getItem("cart")))
-
   }
 
   const plusCartItem = (id) => {
@@ -68,8 +67,7 @@ function cart() {
       cart.push(clickedGood)
     }
 
-    localStorage.setItem("cart", JSON.stringify(cart))
-    
+    localStorage.setItem("cart", JSON.stringify(cart)) 
   }
 
   const renderCartGoods = (goods) => {
