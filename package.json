@@ -1,0 +1,25 @@
+{
+  "name": "wildberries",
+  "version": "1.0.0",
+  "description": "https://alehnovich-vladimir.github.io/Wildberries/",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alehnovich-Vladimir/Wildberries.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alehnovich-Vladimir/Wildberries/issues"
+  },
+  "homepage": "https://github.com/Alehnovich-Vladimir/Wildberries#readme",
+  "devDependencies": {
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1"
+  }
+}
