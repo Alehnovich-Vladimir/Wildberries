@@ -4,7 +4,7 @@
   "description": "https://alehnovich-vladimir.github.io/Wildberries/",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --mode=development",
     "watch": "webpack --watch"
   },
   "repository": {

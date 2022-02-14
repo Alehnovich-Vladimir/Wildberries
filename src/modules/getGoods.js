@@ -31,7 +31,7 @@ const getGoods = () => {
     }
 
     const getData = (value, category) => {
-        fetch('db.json')
+        fetch('db/db.json')
             .then((response) => response.json())
             .then((data) => {
                 const array = category ? data.filter((item) => item[category] === value) : data
