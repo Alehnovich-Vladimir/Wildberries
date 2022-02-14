@@ -5,6 +5,7 @@ function cart() {
   const goodsContainer = document.querySelector('.long-goods-list')
   const cartTable = document.querySelector('.cart-table__goods')
   const modalForm = document.querySelector('.modal-form')
+  const totalSum = document.querySelector('.card-table__total')
   
 
   const deleteCartItem = (id) => {
@@ -80,7 +81,7 @@ function cart() {
 					<td><button class="cart-btn-minus"">-</button></td>
 					<td>${good.count}</td>
 					<td><button class=" cart-btn-plus"">+</button></td>
-					<td>${+good.price * +good.count}$</td>
+					<td>${good.price * good.count}$</td>
 					<td><button class="cart-btn-delete"">x</button></td>
       `
 
@@ -117,6 +118,7 @@ function cart() {
   modalForm.addEventListener('submit', (e) => {
     e.preventDefault()
     sendForm()
+    localStorage.removeItem("cart")
   })
 
 
