@@ -31,7 +31,7 @@ const getGoods = () => {
     }
 
     const getData = (value, category) => {
-        fetch('https://wildberries-a15fd-default-rtdb.firebaseio.com/db.json')
+        fetch('db.json')
             .then((response) => response.json())
             .then((data) => {
                 const array = category ? data.filter((item) => item[category] === value) : data
